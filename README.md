@@ -21,7 +21,7 @@ This project conducts a comprehensive historical analysis of global suicide tren
 ### ⚙️ Cleaning & Preprocessing Pipeline
 1. **Handling Missing Values**: Resolved null values in historical statistics through simple imputer models (median strategy) to preserve valid records.
 2. **Rate Engineering**: Constructed the key target metric `suicide_rate` (Suicides per 100,000 population):
-   $$\text{suicide\_rate} = \frac{\text{suicides\_no}}{\text{population}} \times 100,000$$
+   $$\text{Suicide Rate} = \frac{\text{Number of Suicides}}{\text{Population}} \times 100,000$$
 3. **Ordinal Encoding**: Encoded the `age` groups (e.g., "5-14 years", "15-24 years", etc.) to map demographic hierarchy into our forecasting models.
 4. **Categorical Encoding**: Encoded `country` and `sex` features using Label Encoding.
 
